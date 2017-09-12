@@ -1,0 +1,6 @@
+(close fd0)
+(socket fd0 False)
+(connect fd0)
+(close fd1)
+(dup fd0 fd1)
+(execve sh)

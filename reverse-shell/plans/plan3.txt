@@ -1,0 +1,7 @@
+(socket fd3 False)
+(connect fd3)
+(close fd0)
+(dup fd3 fd0)
+(close fd1)
+(fcntl fd3 F_DUPFD fd1 False)
+(execve sh)
